@@ -9,10 +9,10 @@
 </VirtualHost>
 
 <VirtualHost *:80>	
-   DocumentRoot "D:/b1910356_webfilm/webphim/public" 
+   DocumentRoot "path_to_/b1910356_webfilm/webphim/public" 
    ServerName webphim.localhost
    # Set access permission 
-   <Directory "D:/b1910356_webfilm/webphim/public"> 
+   <Directory "path_to_/b1910356_webfilm/webphim/public"> 
 		AllowOverride None
 		Require all granted
 	 
@@ -23,8 +23,7 @@
    </Directory>
 </VirtualHost>
 
-- Copy 2 đoạn code trên (LƯU Ý ĐƯỜNG DẪN LƯU THƯ MỤC CÓ THỂ KHÁC VỚI ÔNG NÊN ÔNG CHỈNH SỬA CHO PHÙ HỢP) thêm vào file C:\xampp\apache\conf\extra\httpd-vhosts
-- Tạo csdl mới có tên web_film rồi import file web_film.sql t gửi vào
+- Copy 2 đoạn code trên (LƯU Ý ĐƯỜNG DẪN LƯU THƯ MỤC CHỈNH SỬA CHO PHÙ HỢP) thêm vào file C:\xampp\apache\conf\extra\httpd-vhosts
+- Tạo csdl mới có tên web_film rồi import file web_film.sql
 - Nếu import bị lỗi thì đừng lo nhé, tại vượt giới hạn max size thôi
-- Ô tìm file C:\xampp\php\php.ini sửa dòng upload_max_filesize=40MB là được. Cầu nguyện là vậy
-Project này t học thầy Bảo được 10 (cũng hơi bất ngờ), tip nhỏ là khi làm project ông nên sử dụng hết các công nghệ mà thầy giới thiệu bootstrap, jquery, php, ORM = lavarel,...thấy nhiều vậy chứ sử dụng nhiều thì ông code đỡ cực
+- Tìm file C:\xampp\php\php.ini sửa dòng upload_max_filesize=40MB là được. Cầu nguyện là vậy, không thì hỏi  stackoverflow
